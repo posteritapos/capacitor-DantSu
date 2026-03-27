@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internet permission for TCP/IP printer connections -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Bluetooth permissions for printer connections -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <!-- Android 12+ Bluetooth permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <!-- USB host feature for USB printer connections -->
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+
+</manifest>
